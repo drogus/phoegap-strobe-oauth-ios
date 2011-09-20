@@ -34,6 +34,10 @@
 		7F79117814269ACB002F3857 /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F79117714269ACB002F3857 /* PhoneGap.plist */; };
 		7F79117C14269ACB002F3857 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F79117B14269ACB002F3857 /* AppDelegate.m */; };
 		7F79118A14269D2A002F3857 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 7F79118914269D2A002F3857 /* www */; };
+		7F79119D142737FD002F3857 /* ChildBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F791190142737FD002F3857 /* ChildBrowser.bundle */; };
+		7F79119F142737FD002F3857 /* ChildBrowserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F791193142737FD002F3857 /* ChildBrowserCommand.m */; };
+		7F7911A0142737FD002F3857 /* ChildBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F791195142737FD002F3857 /* ChildBrowserViewController.m */; };
+		7F7911A1142737FD002F3857 /* ChildBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F791196142737FD002F3857 /* ChildBrowserViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +73,12 @@
 		7F79117B14269ACB002F3857 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		7F79117E14269ACB002F3857 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		7F79118914269D2A002F3857 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		7F791190142737FD002F3857 /* ChildBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ChildBrowser.bundle; sourceTree = "<group>"; };
+		7F791192142737FD002F3857 /* ChildBrowserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBrowserCommand.h; sourceTree = "<group>"; };
+		7F791193142737FD002F3857 /* ChildBrowserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBrowserCommand.m; sourceTree = "<group>"; };
+		7F791194142737FD002F3857 /* ChildBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBrowserViewController.h; sourceTree = "<group>"; };
+		7F791195142737FD002F3857 /* ChildBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBrowserViewController.m; sourceTree = "<group>"; };
+		7F791196142737FD002F3857 /* ChildBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildBrowserViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 		7F79112914269ACA002F3857 = {
 			isa = PBXGroup;
 			children = (
+				7F79118B1426A58E002F3857 /* Plugins */,
 				7F79118914269D2A002F3857 /* www */,
 				7F79115514269ACA002F3857 /* phonegapoauth */,
 				7F79113A14269ACA002F3857 /* Frameworks */,
@@ -229,6 +240,27 @@
 			name = Plugins;
 			sourceTree = "<group>";
 		};
+		7F79118B1426A58E002F3857 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				7F79118F142737FD002F3857 /* ChildBrowser */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		7F79118F142737FD002F3857 /* ChildBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				7F791190142737FD002F3857 /* ChildBrowser.bundle */,
+				7F791192142737FD002F3857 /* ChildBrowserCommand.h */,
+				7F791193142737FD002F3857 /* ChildBrowserCommand.m */,
+				7F791194142737FD002F3857 /* ChildBrowserViewController.h */,
+				7F791195142737FD002F3857 /* ChildBrowserViewController.m */,
+				7F791196142737FD002F3857 /* ChildBrowserViewController.xib */,
+			);
+			path = ChildBrowser;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,6 +326,8 @@
 				7F79117614269ACA002F3857 /* Capture.bundle in Resources */,
 				7F79117814269ACB002F3857 /* PhoneGap.plist in Resources */,
 				7F79118A14269D2A002F3857 /* www in Resources */,
+				7F79119D142737FD002F3857 /* ChildBrowser.bundle in Resources */,
+				7F7911A1142737FD002F3857 /* ChildBrowserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +356,8 @@
 			files = (
 				7F79115C14269ACA002F3857 /* main.m in Sources */,
 				7F79117C14269ACB002F3857 /* AppDelegate.m in Sources */,
+				7F79119F142737FD002F3857 /* ChildBrowserCommand.m in Sources */,
+				7F7911A0142737FD002F3857 /* ChildBrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +500,7 @@
 				7F79118314269ACB002F3857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
